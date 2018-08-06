@@ -1,6 +1,6 @@
 # homepage: flag so high
 Given("that I can open the website") do
-  pending # Write code here that turns the phrase above into concrete actions
+  the_uplifter_home.open_website
 end
 
 Given("I can navigate to the homepage") do
