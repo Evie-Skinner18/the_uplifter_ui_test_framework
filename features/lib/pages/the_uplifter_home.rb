@@ -12,7 +12,7 @@ class Homepage
 
   end # end of initialize
 
-  def open_website
+  def visit_homepage
     visit(@homepage_url)
   end
 
