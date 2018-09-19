@@ -1,4 +1,5 @@
 require_relative '../lib/uplifter_site'
+include TheUplifterSite
 
 # homepage: flag so high
 Given('that I can open the website') do
