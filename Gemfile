@@ -2,10 +2,11 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
-gem "sinatra"
-gem "cucumber"
-gem "selenium"
-gem "rspec"
-# gem "rails"
+gem "faker"
+gem 'capybara'
+gem 'cucumber'
+gem 'selenium-webdriver'
+gem 'site_prism'
+gem 'activesupport'
+gem 'chromedriver-helper'
+gem 'rspec'
