@@ -10,11 +10,13 @@ And('I can navigate to the homepage') do
 end
 
 When('I click on the play button for Flag So High') do
-  pending # Write code here that turns the phrase above into concrete actions
+  the_uplifter_home.execute_script "window.scrollBy(0,500)"
+  the_uplifter_home.play_flag_so_high
+  sleep(20)
 end
 
 Then('the website should play Flag So High') do
-  pending # Write code here that turns the phrase above into concrete actions
+  pending # assertion e.g expect(the song to be palying)
 end
 
 # homepage: brunel

@@ -8,8 +8,6 @@ require 'capybara/dsl'
 
 # require the module/superclass here
 require_relative '../lib/uplifter_site'
-# require 'dotenv'
-# Dotenv.load(".env")
 
 #CAPYBARA built around Selenium so need to configure the driver from here.
 #Set up the driver AS WE RUN CUCUMBER

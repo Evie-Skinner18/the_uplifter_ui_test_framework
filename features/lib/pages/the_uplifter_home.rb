@@ -9,12 +9,22 @@ class Homepage
   def initialize
     @homepage_url = 'https://www.theuplifter.co.uk/'
     @homepage_button = 'Home'
-    @flag_so_high_button
+    @flag_so_high_play_button = 'Play'
+    @flag_so_high_pause_button = 'Pause'
+
 
   end
 
   def visit_homepage
     visit(@homepage_url)
+  end
+
+  # def scroll_down
+  #   Homepage.
+  # end
+
+  def play_flag_so_high
+    click_link(@flag_so_high_play_button)
   end
 
 
