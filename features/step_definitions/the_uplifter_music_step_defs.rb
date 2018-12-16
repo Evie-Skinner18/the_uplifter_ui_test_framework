@@ -6,8 +6,7 @@ Given('that I can open the website') do
 end
 
 And('I can navigate to the homepage') do
-  Pending
-  #the_uplifter_home.
+  expect(the_uplifter_home.current_url).to eq("https://www.theuplifter.co.uk/")
 end
 
 When('I click on the play button for Flag So High') do

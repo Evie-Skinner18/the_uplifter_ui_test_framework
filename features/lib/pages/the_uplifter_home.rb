@@ -9,13 +9,15 @@ class Homepage
   def initialize
     @homepage_url = 'https://www.theuplifter.co.uk/'
     @homepage_button = 'Home'
-    @
+    @flag_so_high_button
 
   end
 
   def visit_homepage
     visit(@homepage_url)
   end
+
+
 
 
 
