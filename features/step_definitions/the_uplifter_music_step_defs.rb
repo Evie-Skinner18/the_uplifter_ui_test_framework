@@ -10,9 +10,9 @@ And('I can navigate to the homepage') do
 end
 
 When('I click on the play button for Flag So High') do
-  the_uplifter_home.execute_script "window.scrollBy(0,500)"
+  the_uplifter_home.execute_script "window.scrollBy(0,6000)"
   the_uplifter_home.play_flag_so_high
-  sleep(20)
+  sleep(10)
 end
 
 Then('the website should play Flag So High') do

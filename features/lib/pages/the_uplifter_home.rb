@@ -24,7 +24,7 @@ class Homepage
   # end
 
   def play_flag_so_high
-    click_link(@flag_so_high_play_button)
+    click_button(@flag_so_high_play_button)
   end
 
 
