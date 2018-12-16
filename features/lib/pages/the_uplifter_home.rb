@@ -1,10 +1,10 @@
 # https://www.theuplifter.co.uk/
 
-require 'capybara/dsl'
+# require 'capybara/dsl'
 
 # This is the POM for the homepage
 class Homepage
-
+#include the module so we can now run nice Capybara methods straigth away
   include Capybara::DSL
 
   def initialize

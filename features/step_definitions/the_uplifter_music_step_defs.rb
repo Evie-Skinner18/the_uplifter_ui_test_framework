@@ -3,8 +3,6 @@ include TheUplifterSite
 
 # homepage: flag so high
 Given('that I can open the website') do
-  puts 'Hello!'
-
   the_uplifter_home.visit_homepage
 end
 
