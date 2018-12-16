@@ -21,11 +21,12 @@ end
 
 # homepage: brunel
 When('I scroll down to the Brunel Goods Shed recording') do
-  pending # Write code here that turns the phrase above into concrete actions
+  the_uplifter_home.execute_script "window.scrollBy(0,8000)"
 end
 
 Then('I can click on and play the Brunel Goods Shed recording') do
-  pending # Write code here that turns the phrase above into concrete actions
+  the_uplifter_home.play_brunel_recording
+  sleep(10)
 end
 
 # @music

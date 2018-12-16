@@ -10,19 +10,14 @@ class Homepage
     @homepage_url = 'https://www.theuplifter.co.uk/'
     @homepage_button = 'Home'
     @flag_so_high_xpath = '//*[@id="page-content-wrap"]/div/div[3]/div/div[1]/div[7]/section/article/div/div[2]/header/div/div[1]/a'
+    @brunel_recording_xpath = '//*[@id="page-content-wrap"]/div/div[8]/div/div/div/section/article/div/div[2]/header/div/div[1]/a'
     @music_buttons = 'play-button'
     @music_buttons_array = []
-
-
   end
 
   def visit_homepage
     visit(@homepage_url)
   end
-
-  # def scroll_down
-  #   Homepage.
-  # end
 
   def find_all_songs
     all(@music_buttons).each { |button| @music_buttons_array.push(button)}
@@ -35,8 +30,9 @@ class Homepage
     find(:xpath, @flag_so_high_xpath).click
   end
 
-  # all(@homepage_products).each { |product| @homepage_products_array.push(product)}
-
+  def play_brunel_recording
+    find(:xpath, @brunel_recording_xpath).click
+  end
 
 
 
