@@ -9,22 +9,22 @@ And('I can navigate to the homepage') do
   expect(the_uplifter_home.current_url).to eq("https://www.theuplifter.co.uk/")
 end
 
-When('I click on the play button for Flag So High') do
+When('I scroll down to Flag So High') do
   the_uplifter_home.execute_script "window.scrollBy(0,6000)"
+  the_uplifter_home.find_all_songs
+end
+
+Then('I can click on and play Flag So High') do
   the_uplifter_home.play_flag_so_high
   sleep(10)
 end
 
-Then('the website should play Flag So High') do
-  pending # assertion e.g expect(the song to be palying)
-end
-
 # homepage: brunel
-When('I click on the play button for the Brunel Goods Shed recording') do
+When('I scroll down to the Brunel Goods Shed recording') do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Then('the website should play the Brunel Goods Shed recording') do
+Then('I can click on and play the Brunel Goods Shed recording') do
   pending # Write code here that turns the phrase above into concrete actions
 end
 

@@ -9,8 +9,9 @@ class Homepage
   def initialize
     @homepage_url = 'https://www.theuplifter.co.uk/'
     @homepage_button = 'Home'
-    @flag_so_high_play_button = 'Play'
-    @flag_so_high_pause_button = 'Pause'
+    @flag_so_high_xpath = '//*[@id="page-content-wrap"]/div/div[3]/div/div[1]/div[7]/section/article/div/div[2]/header/div/div[1]/a'
+    @music_buttons = 'play-button'
+    @music_buttons_array = []
 
 
   end
@@ -23,9 +24,18 @@ class Homepage
   #   Homepage.
   # end
 
-  def play_flag_so_high
-    click_button(@flag_so_high_play_button)
+  def find_all_songs
+    all(@music_buttons).each { |button| @music_buttons_array.push(button)}
   end
+
+  def play_flag_so_high
+    # all(@music_buttons).each { |button| @music_buttons_array.push(button)}
+    # find(@music_buttons_array[0]).click
+    # click_on(@music_buttons_array[0])
+    find(:xpath, @flag_so_high_xpath).click
+  end
+
+  # all(@homepage_products).each { |product| @homepage_products_array.push(product)}
 
 
 
