@@ -40,7 +40,7 @@ Then("I can click on and play the interview") do
 end
 
 # music link
-Given("I can click on the Music button on the navbar") do
+And("I can click on the Music button on the navbar") do
   the_uplifter_home.visit_music_from_homepage
 end
 
