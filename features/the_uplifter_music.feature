@@ -14,6 +14,13 @@ Scenario: I should be able to listen to the Brunel Goods Shed recording from the
   When I scroll down to the Brunel Goods Shed recording
   Then I can click on and play the Brunel Goods Shed recording
 
+@homepage_interview
+Scenario: I should be able to listen to the Mixcloud recording of Tom's radio interview
+  Given that I can open the website
+  And I can navigate to the homepage
+  When I scroll down to the Mixcloud interview
+  Then I can click on and play the interview
+
 @music_page
 Scenario: I should be able to open the music page
   Given that I can open the music page

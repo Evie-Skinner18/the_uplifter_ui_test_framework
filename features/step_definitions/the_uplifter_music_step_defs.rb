@@ -16,7 +16,7 @@ end
 
 Then('I can click on and play Flag So High') do
   the_uplifter_home.play_flag_so_high
-  sleep(10)
+  sleep(5)
 end
 
 # homepage: brunel
@@ -26,7 +26,17 @@ end
 
 Then('I can click on and play the Brunel Goods Shed recording') do
   the_uplifter_home.play_brunel_recording
-  sleep(10)
+  sleep(5)
+end
+
+# @homepage_interview
+When("I scroll down to the Mixcloud interview") do
+  the_uplifter_home.execute_script "window.scrollBy(0,6000)"
+end
+
+Then("I can click on and play the interview") do
+  the_uplifter_home.find_all_mixcloud_play_buttons
+  the_uplifter_home.play_mixcloud_interview
 end
 
 # @music

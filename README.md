@@ -6,6 +6,7 @@ Tom Earwaker (The Uplifter) is my favourite DJ. I thought I would have a go at t
 - Ruby
 - Selenium Webdriver
 - Capybara DSL
+- Gherkin
 
 ## OOP Approach
 I have implemented a page object model, comprising of a site module and several pages of the website as classes modelled in Ruby.
