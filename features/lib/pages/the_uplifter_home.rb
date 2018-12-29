@@ -14,7 +14,8 @@ class Homepage
     @music_buttons = 'play-button'
     @music_buttons_array = []
     @mixcloud_play_buttons_array = []
-    @mixcloud_interview_button = 'widget-play-button'
+    @mixcloud_interview_xpath = '/html/body/div[1]/div/div[2]/div/div[1]/div[4]'
+    @music_page_button = 'Music'
   end
 
   def visit_homepage
@@ -36,12 +37,12 @@ class Homepage
     find(:xpath, @brunel_recording_xpath).click
   end
 
-  def find_all_mixcloud_play_buttons
-    all(@mixcloud_play_buttons_array).each { |button| @mixcloud_play_buttons_array.push(button)}
+  def play_mixcloud_interview
+    find(:xpath, @mixcloud_interview_xpath).click
   end
 
-  def play_mixcloud_interview
-    find(@mixcloud_interview_button[0]).click
+  def visit_music_from_homepage
+    click_on(@music_page_button)
   end
 
 

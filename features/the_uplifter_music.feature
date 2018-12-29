@@ -21,9 +21,14 @@ Scenario: I should be able to listen to the Mixcloud recording of Tom's radio in
   When I scroll down to the Mixcloud interview
   Then I can click on and play the interview
 
-@music_page
-Scenario: I should be able to open the music page
+@homepage_music_link
+Scenario: I should be able to navigate to the music page from the homepage
+  Given that I can open the website
+  And I can click on the Music button on the navbar
+  Then I should be taken to the music page
+
+@music_page_stroud_vocal
+Scenario: I should be able to play the vocal version of Stroud from the music page
   Given that I can open the music page
-  And I can navigate to the homepage
-  When I click on the play button for the Brunel Goods Shed recording
-  Then the website should play the Brunel Goods Shed recording
+  When I click on the play button for the Stroud vocal recording
+  Then the website should play the Stroud vocal recording
