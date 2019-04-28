@@ -14,7 +14,10 @@ class Homepage
     @music_buttons_array = []
     @mixcloud_play_button_class = 'widget-play-button'
     # @mixcloud_interview_xpath = '/html/body/div[1]/div/div[2]/div/div[1]/div[4]'
-    @navbar_links_array = all('non-mobile')
+    @navbar_links_class = 'top'
+    @navbar_links_array = []
+    # @navbar_top_class = 'top'
+    @music_navbar_text = 'Music'
   end
 
   def visit_homepage
@@ -47,12 +50,15 @@ class Homepage
   def visit_music_from_homepage
     #click_link(@music_page_button)
      # @music_link = all('top')[2]
-     # click_link(@music_link)
-     within('main-nav') do
-       within('ul li') do
-         click_link('Music')
-       end
-     end
+
+     find_link(@navbar_links_array[5]).click_link
+    #  click_link(@navbar_links_array[2])
+    #  within() do
+    #    within('div') do
+    #      click_link('Music')
+    #    end
+    #  end
+
   end
 
 
