@@ -16,8 +16,7 @@ When('I scroll down to Flag So High') do
 end
 
 Then('I can click on and play Flag So High') do
-  the_uplifter_home.play_flag_so_high
-  sleep(5)
+  the_uplifter_home.play_all_songs_on_homepage
 end
 
 # homepage: brunel

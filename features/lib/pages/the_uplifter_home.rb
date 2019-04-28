@@ -11,7 +11,7 @@ class Homepage
     @homepage_button = 'Home'
     @flag_so_high_xpath = '//*[@id="page-content-wrap"]/div/div[3]/div/div[1]/div[7]/section/article/div/div[2]/header/div/div[1]/a'
     @brunel_recording_xpath = '//*[@id="page-content-wrap"]/div/div[8]/div/div/div/section/article/div/div[2]/header/div/div[1]/a'
-    @music_buttons = 'play-button'
+    @music_buttons = 'button button-circle button-action play-button'
     @music_buttons_array = []
     @mixcloud_play_buttons_array = []
     @mixcloud_interview_xpath = '/html/body/div[1]/div/div[2]/div/div[1]/div[4]'
@@ -30,11 +30,11 @@ class Homepage
     all(@music_buttons).each { |button| @music_buttons_array.push(button)}
   end
 
-  def play_flag_so_high
-    # all(@music_buttons).each { |button| @music_buttons_array.push(button)}
-    # find(@music_buttons_array[0]).click
-    # click_on(@music_buttons_array[0])
-    find(:xpath, @flag_so_high_xpath).click
+  def play_all_songs_on_homepage
+    @music_buttons_array.each do |button|
+      button.click
+    end
+    
   end
 
   def play_brunel_recording
