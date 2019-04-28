@@ -1,4 +1,7 @@
+
+@music
 Feature: as a user I should be able to listen to The Uplifter's music
+
 
 @homepage_flag
 Scenario: I should be able to listen to Flag So High from the homepage

@@ -1,3 +1,5 @@
+
+@gigs
 Feature: as a user I should be able to view information about Tom's performances and purchase tickets
 
 @homepage_buy_tix
